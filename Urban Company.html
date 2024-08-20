@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: white;
+            font-family: sans-serif;
+        }
+        .div1{
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav li{
+            
+            display: inline-block;
+            list-style-type: none;
+        }
+        nav li a{
+            
+            background-color: white;
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+        }
+        .i1 { grid-area: i1; }
+        .i2 { grid-area: i2; }
+        .i3 { grid-area: i3; }
+        .i4 { grid-area: i4; }
+        .i5 { grid-area: i5; }
+        .i6 { grid-area: i6; }
+        .i7 { grid-area: i7; }
+        .i8 { grid-area: i8; }        
+        #urbanlogo{
+            width: 220px;
+            height: 50px;
+            padding: 10px;
+        }
+        #user{
+            float: right;
+            width: 30px;
+            height: 30px;
+        }
+        #txtarea1{
+            background-color: white;
+            color: black;
+            border-color: black;
+            border-radius: 10px;
+            width: 200px;
+            float: right;
+            
+        }
+        #txtarea2{
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            width: 200px;
+            float: right;
+        }
+        #hrid{
+            width: 90%;
+            color: black;
+        }
+        .item1 { grid-area: i1; }
+.item2 { grid-area: i2;  }
+.item3 { grid-area: i3;}
+.item4 { grid-area: i4; }
+.item5 { grid-area: i5;  }
+.item6 { grid-area: i6; }
+.item7 { grid-area: i7;  }
+.item8 { grid-area: i8;}
+
+
+
+.im1 { grid-area: im1; }
+.im2 { grid-area: im2; }
+.im3 { grid-area: im3; }
+.im4 { grid-area: im4; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'i1 i1 i2 i2 i3 i3'
+    'i4 i4 i5 i5 i6 i6'
+    'i7 i7 i7 i8 i8 i8';
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+  width: 50%;
+}
+
+.grid-container > div {
+  background-color: rgba(223, 223, 223, 0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 40px;
+}
+.grid-container2 {
+  display: grid;
+  grid-template-areas:
+    'im1 im2'
+    'im1 im2'
+    'im1 im2'
+    'im1 im4'
+    'im3 im4'
+    'im3 im4'
+    'im3 im4';
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+  width: 50%;
+}
+
+.grid-container2 > div {
+  border-radius: 10px;
+}
+.gr1 {
+  display: grid;
+  grid-template-columns:auto auto auto auto auto;
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.gr1 > div {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border-radius: 40px;
+  width: 250px;
+}
+.gr2 {
+  display: grid;
+  grid-template-columns:auto auto auto auto;
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.gr2 > div {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border-radius: 40px;
+  width: 250px;
+}
+
+.gr3 {
+  display: grid;
+  grid-template-columns:auto auto auto;
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.gr3 > div {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border-radius: 40px;
+  width: 250px;
+}
+#href1{
+    color: black;
+    text-decoration: none;
+}
+#imggrp1{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+.gridlast{
+    background-color: lightgrey;
+    color: black;
+    display: grid;
+  grid-template-columns:auto auto auto auto;
+  
+  gap: 10px;
+  padding: 10px;
+
+}
+.gridlast > div {
+  text-align: center;
+
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 40px;
+  width: 250px;
+}
+.gridlast div li{
+    list-style-type: none;
+    padding: 10px;
+}
+#imglogo{
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+}
+#imggrp2{
+    width: 100%;
+    height: 100%;
+}
+#imgicon{
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    align-content: center;
+}
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <img id="urbanlogo" src="urban logo.png">
+        <nav>
+            <ul>
+                <li><a href="">Beauty</a></li>
+                <li><a href="">Homes</a></li>
+                <li><a href="">Native</a></li>
+            </ul>
+        </nav>
+        <textarea id="txtarea1">Your Location</textarea>
+        <textarea id="txtarea2">Search</textarea>
+        <a href=""><img id="user" src="user.jpeg"></a>
+        <a href=""><img id="user" src="cart.jpeg"></a>
+    </div>
+    <h1>Home services at your doorstep</h1>
+        <h2>What are you looking for?</h2>
+    <div style="display: flex;">
+    <div class="grid-container">
+        <div class="item1"><a href="" id="href1"><img id ="imgicon" src="womanmassage.jpeg">Women's Salon & Spa</a></div>
+        <div class="item2"><a href="" id="href1"><img id ="imgicon" img src="man massage 1.jpeg">Men's Salon & Massage</a></div>
+        <div class="item3"><a href="" id="href1"><img id ="imgicon" img src="pest control.jpg">Cleaning and pest control</a></div>  
+        <div class="item4"><a href="" id="href1"><img id ="imgicon" img src="electrician.jpeg">Electrician, Plumber and Carpenter</a></div>
+        <div class="item5"><a href="" id="href1"><img id ="imgicon" img src="water purifier.jpeg">Native Water Purifier</a></div>
+        <div class="item6"><a href="" id="href1"><img id ="imgicon" img src="man painting wall.jpeg">Painting and water proofing</a></div>  
+        <div class="item7"><a href="" id="href1"><img id ="imgicon" img src="wallpanel.jpeg">Wall Panels</a></div>
+        <div class="item8"><a href="" id="href1"><img id ="imgicon" img src="ac power.jpeg">AC and Appliance repair</a></div>
+      </div>
+
+      <div class="grid-container2">
+        <div class="im1"><a href="" id="href1"><img src="man cleaning ac.jpeg" id="imggrp2"></a></div>
+        <div class="im2"><a href="" id="href1"><img src="sofa cleaning.jpeg" id="imggrp2"></a></div>
+        <div class="im3"><a href="" id="href1"><img src="man painting wall.jpeg" id="imggrp2"></a></div>  
+        <div class="im4"><a href="" id="href1"><img src="man haircut.jpeg" id="imggrp2"></a></div>
+      </div>
+    </div>
+      <h1 style="text-align: center;">New and noteworthy</h1>
+    <div class="gr1">
+        <div><a href="" id="href1"><img src="wallpanel.jpeg" id="imggrp1"></br>Wall Panels</a></div>
+        <div><a href="" id="href1"><img src="water purifier.jpeg" id="imggrp1"></br>Native Water Purifier</a></div>
+        <div><a href="" id="href1"><img src="man cleaning bathroom.jpeg" id="imggrp1"></br>Bathroom and kitchen cleaning</a></div>
+        <div><a href="" id="href1"><img src="man painting wall.jpeg" id="imggrp1"></br>Full home painting</a></div>
+        <div><a href="" id="href1"><img src="womanmassage.jpeg" id="imggrp1"></br>Spa Ayurveda</a></div>
+    </div>
+
+    <h1 style="text-align: center;">Most booked services</h1>
+    <div class="gr1">
+        <div><a href="" id="href1"><img src="man cleaning ac.jpeg" id="imggrp1"></br>AC Repair</a></div>
+        <div><a href="" id="href1"><img src="ac power.jpeg" id="imggrp1"></br>Power saving AC service</a></div>
+        <div><a href="" id="href1"><img src="sofa cleaning.jpeg" id="imggrp1"></br>Sofa cleaning</a></div>
+        <div><a href="" id="href1"><img src="man haircut.jpeg" id="imggrp1"></br>Haircut for men</a></div>
+        <div><a href="" id="href1"><img src="washing mashine.jpeg" id="imggrp1"></br>Top load checkup</a></div>
+    </div>
+
+    <h1 style="text-align: center;">AC & appliance repair</h1>
+    <div class="gr1">
+        <div><a href="" id="href1"><img src="man cleaning ac.jpeg" id="imggrp1"></br>AC Repair and Service</a></div>
+        <div><a href="" id="href1"><img src="washing mashine.jpeg" id="imggrp1"></br>Washing Machine Repair</a></div>
+        <div><a href="" id="href1"><img src="water purifier.jpeg" id="imggrp1"></br>Water Purifier Repair and Service</a></div>
+        <div><a href="" id="href1"><img src="tv repair.jpeg" id="imggrp1"></br>Television Repair</a></div>
+        <div><a href="" id="href1"><img src="fridge repair.jpeg" id="imggrp1"></br>Refrigerator Repair</a></div>
+    </div>
+
+    <h1 style="text-align: center;">Cleaning and pest control</h1>
+    <div class="gr2">
+        <div><a href="" id="href1"><img src="wallpanel.jpeg" id="imggrp1"></br>Full home cleaning</a></div>
+        <div><a href="" id="href1"><img src="man cleaning bathroom.jpeg" id="imggrp1"></br>Bathroom and kitchen cleaning</a></div>
+        <div><a href="" id="href1"><img src="sofa cleaning.jpeg" id="imggrp1"></br>Sofa and carpet cleaning</a></div>
+        <div><a href="" id="href1"><img src="pest control.jpg" id="imggrp1"></br>Pest control</a></div>
+    </div>
+
+    <h1 style="text-align: center;">Massage for men</h1>
+    <div class="gr3">
+        <div><a href="" id="href1"><img src="man massage 1.jpeg" id="imggrp1"></br>Pain relief</a></div>
+        <div><a href="" id="href1"><img src="man massage 3.jpeg" id="imggrp1"></br>Post workout</a></div>
+        <div><a href="" id="href1"><img src="man massage 2.jpeg" id="imggrp1"></br>Stress relief</a></div>
+    </div>
+    
+    <div style="background-color: lightgrey;"><img src="urban logo.png" id="urbanlogo"></div>
+       
+    <div class="gridlast">
+        <div>
+            <ul>
+                <li><b style="padding: 10px;">Company</b></li>
+                <li><a href="" id="href1">About us</a></li>
+                <li><a href="" id="href1">Terms and Conditions</a></li>
+                <li><a href="" id="href1">Privacy Policy</a></li>
+                <li><a href="" id="href1">Anti-discrimination Policy</a></li>
+                <li><a href="" id="href1">UC Impact</a></li>
+                <li><a href="" id="href1">Careers</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <ul>
+                <li><b style="padding: 10px;">For Customers</b></li>
+                <li><a href="" id="href1">UC Reviews</a></li>
+                <li><a href="" id="href1">Categories near you</a></li>
+                <li><a href="" id="href1">Blog</a></li>
+                <li><a href="" id="href1">Contact us</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <ul>
+                <li><b style="padding: 10px;">For partners</b></li>
+                <li><a href="" id="href1">Register as a professional</a></li>
+                
+            </ul>
+        </div>
+
+        <div>
+            <ul>
+                <li><b style="padding: 10px;">Social Links</b></li>
+                <li><a href="" id="href1"><img src="twitterlogo.png"  id="imglogo"></a><a href="" id="href1"><img src="instalogo.png" id="imglogo"></a><a href="" id="href1"><img src="fblogo.png"  id="imglogo"></a><a href="" id="href1"><img src="linkedinlogo.png" id="imglogo"></a></li>
+                
+                <li><a href="" id="href1">Download on App Store</a></li>
+                <li><a href="" id="href1">Get in on Google Play</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
